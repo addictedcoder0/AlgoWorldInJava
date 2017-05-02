@@ -39,5 +39,16 @@ public class ListNodeUtils {
 		}
 	}
 	
+	public static ListNode getLastNode(ListNode node){
+		if(node!=null){
+			ListNode currentNode = node;
+			while(currentNode.getNext() != null){
+				currentNode = currentNode.getNext();
+			}
+			return currentNode;
+		}else{
+			return null;
+		}
+	}
 	
 }

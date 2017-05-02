@@ -16,7 +16,11 @@ public class ExchangeThread extends Thread{
 	}
 	
 	public void run(){
-		sl.insertAtBegin(ln);
+		// remove comment for testing insertion at beginning
+		//sl.insertAtBegin(ln);
+		
+		//remove comment for testing insertion at the end
+		sl.insertAtEnd(ln);
 		try {
 			Thread.sleep(200);
 		}catch(InterruptedException ie){}
